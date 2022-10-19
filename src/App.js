@@ -26,6 +26,7 @@ const App = () => {
       />
       <Library
         libraryToggle={libraryToggle}
+        setLibraryToggle={setLibraryToggle}
         songs={songs}
         setCurrentSong={setCurrentSong}
         setIsPlaying={setIsPlaying}

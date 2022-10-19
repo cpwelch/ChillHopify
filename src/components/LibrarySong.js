@@ -7,6 +7,7 @@ const LibrarySong = ({
   setSongs,
   id,
   songs,
+  setLibraryToggle,
 }) => {
   const songSelectHandler = () => {
     setCurrentSong(song);
@@ -24,6 +25,7 @@ const LibrarySong = ({
       }
     });
     setSongs(newSongs);
+    setLibraryToggle(false);
   };
   return (
     <div

@@ -9,6 +9,7 @@ const Library = ({
   setIsPlaying,
   setSongs,
   libraryToggle,
+  setLibraryToggle,
 }) => {
   return (
     <div className={`library ${libraryToggle ? "active-library" : ""}`}>
@@ -26,6 +27,7 @@ const Library = ({
             id={song.id}
             key={song.id}
             setSongs={setSongs}
+            setLibraryToggle={setLibraryToggle}
           />
         ))}
       </div>
